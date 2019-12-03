@@ -23,21 +23,36 @@ Major steps included:
   This code will generate a meta analysis with fixed effect and random effects estimates/ORs and the weights of the respective studies. 
  - Visualisation with forest plots using `forest`. 
  
- ![alt text](https://github.com/svkal/meta_analysis_with_R/blob/master/forest_plot.png)
+![alt text](https://github.com/svkal/meta_analysis_with_R/blob/master/forest_plot.png)
  
- Important interpretation points: Heterogeneity (if high use random effects model for interpretation). In this example the heterogeneity is very high (82%), therefore the random effects model needs to be considered. Here, the estimate is not significant. 
+ Important interpretation points: 
+Heterogeneity (if high use random effects model for interpretation). In this example the heterogeneity is very high (82%), therefore the random effects model needs to be considered. 
+Effect estimate: Here, the estimate is not significant. 
+ 
  - Exploration of publication bias with linear regression test of funnel plot asymmetry using `metabias`.  
-
-![alt text] (https://github.com/svkal/meta_analysis_with_R/blob/master/linear_regression_test.png)
-
- - Visualisation with funnel plot using `funnel`. Check position of the data points for interpretation. 
  
-![alt text] (https://github.com/svkal/meta_analysis_with_R/blob/master/funnel_plot.png)
+ ```r
+ 
+	Linear regression test of funnel plot asymmetry
 
- Check data points for interpretation. Inthis case a data point on the lower left corner does not have a corresponding data point on the right. 
- - Sensitivity analysis with leave-one-out crossvalidation
+data:  y
+t = -0.66311, df = 8, p-value = 0.5259
+alternative hypothesis: asymmetry in funnel plot
+sample estimates:
+      bias    se.bias      slope 
+-1.2510975  1.8867201  0.2097183 
+```
+Test shows no publication bias (p > 0.05). Confirm with funnel plot:
+
+ - Visualisation with funnel plot using `funnel`.  
  
+![alt text](https://github.com/svkal/meta_analysis_with_R/blob/master/funnel_plot.png)
+
+ Check data points for interpretation. Inthis case a data point on the lower left side does not have a corresponding data point on the right, which means there may be a lack of studies with low precision i.e. smaller studies. 
  
+ - Sensitivity analysis with leave-one-out crossvalidation.
+ 
+ This procedure is done to check the robustness of the overall effect estimate. Because one large study may influence the overall effect greatly, it can be beneficial to assess the effect estimate without the study. The leave-one-out cross validation one by one excludes studies to assess the sensitivity. If the effect changes greatly, it may not be robust.  
  
 
 
