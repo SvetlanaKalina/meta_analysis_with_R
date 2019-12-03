@@ -24,7 +24,7 @@ Major steps included:
   ```
   This code will generate a meta analysis with fixed effect and random effects estimates/ORs and the weights of the respective studies. 
 
-#### Visualisation with forest plots using `forest`. 
+#### Visualization with forest plots using `forest`. 
  
 ![alt text](https://github.com/svkal/meta_analysis_with_R/blob/master/forest_plot.png)
  
@@ -42,7 +42,7 @@ t = -0.66311, df = 8, p-value = 0.5259
 ```
 Test shows no publication bias (p > 0.05). Confirm with funnel plot:
 
- #### Visualisation with funnel plot using `funnel`.  
+ #### Visualization with funnel plot using `funnel`.  
  
 ![alt text](https://github.com/svkal/meta_analysis_with_R/blob/master/funnel_plot.png)
 
