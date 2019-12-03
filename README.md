@@ -9,7 +9,7 @@ Major steps included:
  - Calculating z-scores using the p-values. This is a necessary step to generate the standard error for `metagen` (SE).
  - Meta analysis with `metagen`. 
  
- ```
+ ```r
  y <- metagen(
         TE=dataset$yi,
         seTE=dataset$se, 
