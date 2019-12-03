@@ -34,16 +34,11 @@ Some important interpretation points:
  
 #### Exploration of publication bias with linear regression test of funnel plot asymmetry using `metabias`.  
  
- ```r
- 
  Linear regression test of funnel plot asymmetry
 
+ ```
 data:  y
 t = -0.66311, df = 8, p-value = 0.5259
-alternative hypothesis: asymmetry in funnel plot
-sample estimates:
-      bias    se.bias      slope 
--1.2510975  1.8867201  0.2097183 
 ```
 Test shows no publication bias (p > 0.05). Confirm with funnel plot:
 
