@@ -26,11 +26,15 @@ Major steps included:
  ![alt text](https://github.com/svkal/meta_analysis_with_R/blob/master/forest_plot.png)
  
  Important interpretation points: Heterogeneity (if high use random effects model for interpretation). In this example the heterogeneity is very high (82%), therefore the random effects model needs to be considered. Here, the estimate is not significant. 
- - Exploration of publication bias with linear regression test of funnel plot asymmetry using `metabias`. 
+ - Exploration of publication bias with linear regression test of funnel plot asymmetry using `metabias`.  
+
+![alt text] (https://github.com/svkal/meta_analysis_with_R/blob/master/linear_regression_test.png)
+
+ - Visualisation with funnel plot using `funnel`. Check position of the data points for interpretation. 
  
- 
- Check p-values and plot for interpretation.
- - Visualisation with funnel plot using `funnel`. Check position of the data points for interpretation.
+![alt text] (https://github.com/svkal/meta_analysis_with_R/blob/master/funnel_plot.png)
+
+ Check data points for interpretation. Inthis case a data point on the lower left corner does not have a corresponding data point on the right. 
  - Sensitivity analysis with leave-one-out crossvalidation
  
  
