@@ -46,7 +46,7 @@ Test shows no publication bias (p > 0.05). Confirm with funnel plot:
  
 ![alt text](https://github.com/svkal/meta_analysis_with_R/blob/master/funnel_plot.png)
 
- Check data points for interpretation. Inthis case a data point on the lower left side does not have a corresponding data point on the right, which means there may be a lack of studies with low precision i.e. smaller studies. 
+ Check data points for interpretation. In this case a data point on the lower left side does not have a corresponding data point on the right, which means there may be a lack of studies with low precision i.e. smaller studies. 
  
  #### Sensitivity analysis with leave-one-out crossvalidation.
  
